@@ -1,1 +1,4133 @@
-[]
+[
+    {
+        "id": "8ea4d9970cbb508a",
+        "type": "tab",
+        "label": "main",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f1e0afa85fa6ffad",
+        "type": "subflow",
+        "name": "Unpack Modbus Data",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 340,
+                "y": 380,
+                "wires": [
+                    {
+                        "id": "78624614763713d9"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 800,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "78624614763713d9",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "78624614763713d9",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "78624614763713d9",
+                        "port": 2
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "78624614763713d9",
+                        "port": 3
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 380,
+                "wires": [
+                    {
+                        "id": "78624614763713d9",
+                        "port": 4
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 440,
+                "wires": [
+                    {
+                        "id": "78624614763713d9",
+                        "port": 5
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 500,
+                "wires": [
+                    {
+                        "id": "78624614763713d9",
+                        "port": 6
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 560,
+                "wires": [
+                    {
+                        "id": "78624614763713d9",
+                        "port": 7
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 620,
+                "wires": [
+                    {
+                        "id": "78624614763713d9",
+                        "port": 8
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 680,
+                "wires": [
+                    {
+                        "id": "78624614763713d9",
+                        "port": 9
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "Slave_Id",
+                "type": "num",
+                "value": "1"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "40fd3ba108130e42",
+        "type": "subflow",
+        "name": "Unpack Http Info Request",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 560,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 2
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 3
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 4
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 5
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 400,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 6
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 460,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 7
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 520,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 8
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 580,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 9
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 640,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 10
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 700,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 11
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 760,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 12
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 820,
+                "wires": [
+                    {
+                        "id": "d4344c732c226525",
+                        "port": 13
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "53781e08e37b5ed4",
+        "type": "subflow",
+        "name": "Unpack Http Setting Request",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 520,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 520,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 520,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 2
+                    }
+                ]
+            },
+            {
+                "x": 520,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 3
+                    }
+                ]
+            },
+            {
+                "x": 520,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 4
+                    }
+                ]
+            },
+            {
+                "x": 520,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 5
+                    }
+                ]
+            },
+            {
+                "x": 520,
+                "y": 400,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 6
+                    }
+                ]
+            },
+            {
+                "x": 520,
+                "y": 460,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 7
+                    }
+                ]
+            },
+            {
+                "x": 520,
+                "y": 520,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 8
+                    }
+                ]
+            },
+            {
+                "x": 520,
+                "y": 580,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 9
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "1f90542d584e4f0a",
+        "type": "modbus-client",
+        "name": "",
+        "clienttype": "simpleser",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyS0",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "dcd7b6b8e1c82805",
+        "type": "modbus-client",
+        "name": "Desktop",
+        "clienttype": "simpleser",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "COM7",
+        "serialType": "RTU",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 2,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "67d6e97978ab10a6",
+        "type": "ui_tab",
+        "name": "Overview",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "21ecdd95678de36d",
+        "type": "ui_group",
+        "name": "Battery Info",
+        "tab": "67d6e97978ab10a6",
+        "order": 1,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ee3ff932ef02fbb3",
+        "type": "MySQLdatabase",
+        "name": "MPPT Database",
+        "host": "192.168.2.132",
+        "port": "3306",
+        "db": "mppt_data_storage",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "999558dbd1359f36",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "429fbb22beb84460",
+        "type": "ui_group",
+        "name": "Load Info",
+        "tab": "67d6e97978ab10a6",
+        "order": 2,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e2d13939cbcdae3e",
+        "type": "ui_group",
+        "name": "PV Info",
+        "tab": "67d6e97978ab10a6",
+        "order": 3,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "28df0594da133d66",
+        "type": "ui_group",
+        "name": "Controller Info",
+        "tab": "67d6e97978ab10a6",
+        "order": 4,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fd4ded4c6f046fa9",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 1,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "bb70c7fdae353f29",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 3,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "97485465b7b3305b",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 4,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "dd1d39ec1934dfc1",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 5,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "656d8f9dff39d9c3",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 6,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "2d82c8ca73365f79",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 7,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "45b011ae1e374086",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 8,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "c58cb23303b8ef30",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 9,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "ffa7d59594403417",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 10,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "61aa4554a87c7355",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 11,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "9c738529117b2283",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 12,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "582a5b8c65e482ef",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 13,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "deb45a3e38e5437c",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 14,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "46b15ccb80b4cac2",
+        "type": "ui_spacer",
+        "z": "8ea4d9970cbb508a",
+        "name": "spacer",
+        "group": "28df0594da133d66",
+        "order": 15,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "997af7f24a851567",
+        "type": "ui_tab",
+        "name": "Setting",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "295cde7d972e1b4c",
+        "type": "ui_group",
+        "name": "MPPT Current Parameter",
+        "tab": "997af7f24a851567",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "21f56792df3df30d",
+        "type": "ui_group",
+        "name": "MPPT Write Parameter",
+        "tab": "997af7f24a851567",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "78624614763713d9",
+        "type": "function",
+        "z": "f1e0afa85fa6ffad",
+        "name": "function 1",
+        "func": "var slaveId = msg.modbusRequest.unitid;\nvar envId = env.get(\"Slave_Id\");\nvar message = new Array(node.outputCount);\n\nvar batteryCapacity = msg.payload[0];\nvar batteryVoltage = msg.payload[1];\nvar chargingCurrent = msg.payload[2];\nvar temperature = msg.payload[3];\nvar loadDcVoltage = msg.payload[4];\nvar loadDcCurrent = msg.payload[5];\nvar loadDcPower = msg.payload[6];\nvar pvVoltage = msg.payload[7];\nvar pvCurrent = msg.payload[8];\nvar pvPower = msg.payload[9];\n\nfor (let index = 0; index < node.outputCount; index++) {\n    message[index] = null;\n}\n\nif (slaveId == envId)\n{\n    message[0] = {payload : batteryCapacity};\n    message[1] = {payload : batteryVoltage / 10};\n    message[2] = {payload : chargingCurrent};\n    message[3] = {payload : temperature};\n    message[4] = {payload : loadDcVoltage / 10};\n    message[5] = {payload : loadDcCurrent};\n    message[6] = {payload : loadDcPower};\n    message[7] = {payload : pvVoltage / 10};\n    message[8] = {payload : pvCurrent};\n    message[9] = {payload : pvPower};\n}\n\nreturn message;",
+        "outputs": 10,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 380,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d4344c732c226525",
+        "type": "function",
+        "z": "40fd3ba108130e42",
+        "name": "function 4",
+        "func": "var output = [\n    {payload: msg.payload.info[0].slave_id},\n    {payload : msg.payload.info[0].battery_capacity},\n    {payload : msg.payload.info[0].battery_voltage / 10},\n    {payload : msg.payload.info[0].charge_current / 100},\n    {payload : msg.payload.info[0].controller_temperature},\n    {payload : msg.payload.info[0].battery_temperature},\n    {payload : msg.payload.info[0].load_voltage / 10},\n    {payload : msg.payload.info[0].load_current / 100},\n    {payload : msg.payload.info[0].load_power},\n    {payload: msg.payload.info[0].load_status},\n    {payload : msg.payload.info[0].pv_voltage / 10},\n    {payload : msg.payload.info[0].pv_current / 100},\n    {payload : msg.payload.info[0].pv_power},\n    { payload: msg.payload.info[0].load_mode }\n]\n\nreturn output;",
+        "outputs": 14,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 120,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f5afcbfbd3f193a3",
+        "type": "function",
+        "z": "53781e08e37b5ed4",
+        "name": "function 5",
+        "func": "var output = [\n    {payload: msg.payload.setting[0].slave_id},\n    {payload : msg.payload.setting[0].over_voltage_threshold},\n    {payload : msg.payload.setting[0].charging_limit_voltage},\n    { payload: msg.payload.setting[0].overdischarge_recovery_voltage},\n    { payload: msg.payload.setting[0].undervoltage_threshold},\n    { payload: msg.payload.setting[0].overdischarge_voltage},\n    { payload: msg.payload.setting[0].overdischarge_limit_voltage},\n    { payload: msg.payload.setting[0].overdischarge_time_delay},\n    { payload: msg.payload.setting[0].temperature_compensation},\n    { payload: msg.payload.setting[0].load_mode}\n]\n\nreturn output;",
+        "outputs": 10,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 80,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a29cd4e504d7f177",
+        "type": "ui_gauge",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21ecdd95678de36d",
+        "order": 3,
+        "width": 8,
+        "height": 7,
+        "gtype": "gage",
+        "title": "Battery Voltage",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "63",
+        "colors": [
+            "#ca3838",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "46",
+        "seg2": "56",
+        "diff": false,
+        "className": "",
+        "x": 940,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "e06300558205ea49",
+        "type": "ui_gauge",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21ecdd95678de36d",
+        "order": 4,
+        "width": 8,
+        "height": 7,
+        "gtype": "gage",
+        "title": "Charge Current",
+        "label": "A",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#ca3838",
+            "#00b500",
+            "#00b500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 940,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a4a9752b3404dddf",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "21ecdd95678de36d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Slave Address",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 940,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "43435a77e424ed55",
+        "type": "ui_gauge",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "28df0594da133d66",
+        "order": 2,
+        "width": 8,
+        "height": 7,
+        "gtype": "gage",
+        "title": "Controller Temperature",
+        "label": "C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#3ab2cb",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 960,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "6ebc825e3736db3d",
+        "type": "ui_gauge",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21ecdd95678de36d",
+        "order": 5,
+        "width": 8,
+        "height": 7,
+        "gtype": "gage",
+        "title": "Battery Temperature",
+        "label": "C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#3ab2cb",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 960,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a291c99c886f2642",
+        "type": "ui_gauge",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "429fbb22beb84460",
+        "order": 4,
+        "width": 8,
+        "height": 7,
+        "gtype": "gage",
+        "title": "Load Current",
+        "label": "A",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 930,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "dd9ce22273faed9c",
+        "type": "ui_gauge",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "429fbb22beb84460",
+        "order": 3,
+        "width": 8,
+        "height": 7,
+        "gtype": "gage",
+        "title": "Load Voltage",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "63",
+        "colors": [
+            "#ca3838",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "46",
+        "seg2": "56",
+        "diff": false,
+        "className": "",
+        "x": 930,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "04eab6f34b5bec67",
+        "type": "ui_gauge",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "429fbb22beb84460",
+        "order": 5,
+        "width": 8,
+        "height": 7,
+        "gtype": "gage",
+        "title": "Load Power",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 930,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "85be020e49187221",
+        "type": "ui_switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Load",
+        "tooltip": "",
+        "group": "429fbb22beb84460",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 1110,
+        "y": 480,
+        "wires": [
+            [
+                "aa5037d97269191e"
+            ]
+        ]
+    },
+    {
+        "id": "272d4b7c85fa58d8",
+        "type": "ui_gauge",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "e2d13939cbcdae3e",
+        "order": 3,
+        "width": 8,
+        "height": 7,
+        "gtype": "gage",
+        "title": "PV Current",
+        "label": "A",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 930,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "f5af47e38d207820",
+        "type": "ui_gauge",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "e2d13939cbcdae3e",
+        "order": 2,
+        "width": 8,
+        "height": 7,
+        "gtype": "gage",
+        "title": "PV Voltage",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "150",
+        "colors": [
+            "#ca3838",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "46",
+        "seg2": "56",
+        "diff": false,
+        "className": "",
+        "x": 930,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a8fdb9bc7d8967c9",
+        "type": "ui_gauge",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "e2d13939cbcdae3e",
+        "order": 4,
+        "width": 8,
+        "height": 7,
+        "gtype": "gage",
+        "title": "PV Power",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 920,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "92e762df39a9a4d8",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 40,
+        "wires": [
+            [
+                "1bc3d7f52cbf4812",
+                "97b95a46f00f9e6f"
+            ]
+        ]
+    },
+    {
+        "id": "1bc3d7f52cbf4812",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2068073d4757cda3",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "url",
+                "v": "http://192.168.2.132:8001/get-info",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "92e762df39a9a4d8"
+            ]
+        ]
+    },
+    {
+        "id": "11ef24e02d1326e9",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "429fbb22beb84460",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Slave Address",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 940,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "fbdff27e67eb9418",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "e2d13939cbcdae3e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Slave Address",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 940,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "97b95a46f00f9e6f",
+        "type": "subflow:40fd3ba108130e42",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "x": 610,
+        "y": 120,
+        "wires": [
+            [
+                "a4a9752b3404dddf",
+                "11ef24e02d1326e9",
+                "fbdff27e67eb9418"
+            ],
+            [
+                "5a299accd7f6ee0c"
+            ],
+            [
+                "a29cd4e504d7f177"
+            ],
+            [
+                "e06300558205ea49"
+            ],
+            [
+                "43435a77e424ed55"
+            ],
+            [
+                "6ebc825e3736db3d"
+            ],
+            [
+                "dd9ce22273faed9c"
+            ],
+            [
+                "a291c99c886f2642"
+            ],
+            [
+                "04eab6f34b5bec67"
+            ],
+            [
+                "9981831f191db4b5"
+            ],
+            [
+                "f5af47e38d207820"
+            ],
+            [
+                "272d4b7c85fa58d8"
+            ],
+            [
+                "a8fdb9bc7d8967c9"
+            ],
+            [
+                "2e5cfe24cb8e1035"
+            ]
+        ]
+    },
+    {
+        "id": "9981831f191db4b5",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 480,
+        "wires": [
+            [
+                "85be020e49187221"
+            ]
+        ]
+    },
+    {
+        "id": "272a01914ba7596f",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://192.168.2.132:8001/load-command",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1510,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa5037d97269191e",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "{\"slave_id\":172,\"load_command\":1}",
+                "tot": "json"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "{\"slave_id\":172,\"load_command\":0}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1300,
+        "y": 480,
+        "wires": [
+            [
+                "da2b766de26780e8",
+                "272a01914ba7596f"
+            ]
+        ]
+    },
+    {
+        "id": "da2b766de26780e8",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "5a299accd7f6ee0c",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "21ecdd95678de36d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Battery Capacity",
+        "format": "{{msg.payload}} Ah",
+        "layout": "row-spread",
+        "className": "",
+        "x": 940,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2efc996f1f6e4ad7",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Overvoltage Threshold Voltage",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 990,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "b9dd30d2101cd504",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 3,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Charging Limit Voltage",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 960,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "b2e0ef0e8aa0f081",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 4,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Overdischarge Recovery Voltage",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1000,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "b86e8aab24cb532e",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 5,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Undervoltage Threshold",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 970,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "7fc3a85e849a1854",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 6,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Overdischarge Voltage",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 960,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "44cbcd2d83bc5e53",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 7,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Overdischarge Limit Voltage",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 980,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "20c5a749f80229cf",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 8,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Overdischarge Time Delay",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 980,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "21695afc319626cd",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 9,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Temperature Compensation",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 980,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "2bf7f5d5801d576e",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "url",
+                "v": "http://192.168.2.132:8001/get-setting",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 840,
+        "wires": [
+            [
+                "435f7d4adcb9d8d8"
+            ]
+        ]
+    },
+    {
+        "id": "435f7d4adcb9d8d8",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 840,
+        "wires": [
+            [
+                "254b50da7a59f6cc",
+                "5951149e73ba0b27"
+            ]
+        ]
+    },
+    {
+        "id": "254b50da7a59f6cc",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "775424a7ec505398",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Slave Address",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 940,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "5951149e73ba0b27",
+        "type": "subflow:53781e08e37b5ed4",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "x": 620,
+        "y": 840,
+        "wires": [
+            [
+                "775424a7ec505398",
+                "e0570d1f69bf20f6"
+            ],
+            [
+                "2efc996f1f6e4ad7"
+            ],
+            [
+                "b9dd30d2101cd504"
+            ],
+            [
+                "b2e0ef0e8aa0f081"
+            ],
+            [
+                "b86e8aab24cb532e"
+            ],
+            [
+                "7fc3a85e849a1854"
+            ],
+            [
+                "44cbcd2d83bc5e53"
+            ],
+            [
+                "20c5a749f80229cf"
+            ],
+            [
+                "21695afc319626cd"
+            ],
+            [
+                "d1537684c78e0137"
+            ]
+        ]
+    },
+    {
+        "id": "96d5207c45eb73f7",
+        "type": "ui_numeric",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Overvoltage Threshold",
+        "tooltip": "",
+        "group": "21f56792df3df30d",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "200",
+        "step": 1,
+        "className": "",
+        "x": 540,
+        "y": 1200,
+        "wires": [
+            [
+                "fe228b447dd9b64c",
+                "c1b15db6484227af"
+            ]
+        ]
+    },
+    {
+        "id": "fe228b447dd9b64c",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "9a8224cbf50db8a9",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "160",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1160,
+        "wires": [
+            [
+                "96d5207c45eb73f7"
+            ]
+        ]
+    },
+    {
+        "id": "c1b15db6484227af",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 6",
+        "func": "var flag = false;\nvar val = msg.payload;\nvar slaveId = flow.get(\"slave_id\");\nif (msg.isSet) {\n    flag = true;\n    msg.payload = {\n        slave_id : slaveId,\n        register_name: \"overvoltage_threshold\",\n        value : val\n    }\n}\nmsg.writeFlag = flag;\nmsg.url = \"http://192.168.2.132:8001/write\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 1200,
+        "wires": [
+            [
+                "ffd19633190aa935",
+                "f5c4f639d86f1b86"
+            ]
+        ]
+    },
+    {
+        "id": "124c2ddab721d4d3",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1190,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ffd19633190aa935",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "e4a0c40150f09c4b",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "slave_id",
+                "pt": "flow",
+                "to": "172",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6354fdf68469fe5e",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "e4a0c40150f09c4b"
+            ]
+        ]
+    },
+    {
+        "id": "f5c4f639d86f1b86",
+        "type": "switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "property": "writeFlag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 990,
+        "y": 1200,
+        "wires": [
+            [
+                "23c70ffbf9513722",
+                "124c2ddab721d4d3"
+            ]
+        ]
+    },
+    {
+        "id": "23c70ffbf9513722",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "17c510c86a57f021",
+        "type": "ui_button",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21f56792df3df30d",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1200,
+        "wires": [
+            [
+                "20a41fd0bbb7d891"
+            ]
+        ]
+    },
+    {
+        "id": "20a41fd0bbb7d891",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "isSet",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isSet",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1200,
+        "wires": [
+            [
+                "96d5207c45eb73f7"
+            ]
+        ]
+    },
+    {
+        "id": "9eb161938fbea3cd",
+        "type": "ui_numeric",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Charging Limit Voltage",
+        "tooltip": "",
+        "group": "21f56792df3df30d",
+        "order": 4,
+        "width": 8,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "200",
+        "step": 1,
+        "className": "",
+        "x": 540,
+        "y": 1300,
+        "wires": [
+            [
+                "81d19a16547ecf8b",
+                "bc0d49cf9e749010"
+            ]
+        ]
+    },
+    {
+        "id": "81d19a16547ecf8b",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "bc0d49cf9e749010",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 7",
+        "func": "var flag = false;\nvar val = msg.payload;\nvar slaveId = flow.get(\"slave_id\");\nif (msg.isSet) {\n    flag = true;\n    msg.payload = {\n        slave_id : slaveId,\n        register_name: \"charging_voltage_limit\",\n        value : val\n    }\n}\nmsg.writeFlag = flag;\nmsg.url = \"http://192.168.2.132:8001/write\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 1300,
+        "wires": [
+            [
+                "aa8711ced27591c9",
+                "60af5675e3467938"
+            ]
+        ]
+    },
+    {
+        "id": "cbddf7f980a266ac",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1190,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa8711ced27591c9",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 13",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "60af5675e3467938",
+        "type": "switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "property": "writeFlag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 990,
+        "y": 1300,
+        "wires": [
+            [
+                "e8216a377012b451",
+                "cbddf7f980a266ac"
+            ]
+        ]
+    },
+    {
+        "id": "e8216a377012b451",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "6d424523c3df3239",
+        "type": "ui_button",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21f56792df3df30d",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1300,
+        "wires": [
+            [
+                "c78a1f4afed1351c"
+            ]
+        ]
+    },
+    {
+        "id": "c78a1f4afed1351c",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "isSet",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isSet",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1300,
+        "wires": [
+            [
+                "9eb161938fbea3cd"
+            ]
+        ]
+    },
+    {
+        "id": "499e7d525b9ca191",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 2",
+        "func": "let column = \"`mppt_id`, `batt_capacity`, `batt_voltage`, `charging_current`, `temperature`, `load_dc_voltage`, `load_dc_current`, `load_dc_power`, `pv_voltage`, `pv_current`, `pv_power`\";\n// let values = \"1,2,3,4,5,6,7,8,9,10,11\"\n// let sql = \"INSERT INTO mppt_data (:columns:) VALUES (:values:)\";\nlet sql = \"INSERT INTO mppt_data (:columns:) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);\"\nsql = sql.replace(\":columns:\", column);\nmsg.topic = sql;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1700,
+        "y": 820,
+        "wires": [
+            [
+                "a2d2f45999b62043",
+                "2633ac8c3e2477c1"
+            ]
+        ]
+    },
+    {
+        "id": "f0c44b29cf377e61",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1320,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7f29942ab8fdf9f",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 3",
+        "func": "var value = new Array(11);\n\nfor (let index = 0; index < 10; index++) {\n    value[index+1] = msg.payload[index];\n}\n\nvalue[0] = msg.modbusRequest.unitid;\n\nvar output = {\n    payload : value\n}\n\nreturn output;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 820,
+        "wires": [
+            [
+                "499e7d525b9ca191",
+                "fc47391f69f37020"
+            ]
+        ]
+    },
+    {
+        "id": "a2d2f45999b62043",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1860,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "beaaf1f5a48db041",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2130,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "fc47391f69f37020",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1860,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "2633ac8c3e2477c1",
+        "type": "mysql",
+        "z": "8ea4d9970cbb508a",
+        "mydb": "ee3ff932ef02fbb3",
+        "name": "MPPT Database",
+        "x": 1880,
+        "y": 860,
+        "wires": [
+            [
+                "beaaf1f5a48db041"
+            ]
+        ]
+    },
+    {
+        "id": "c5e271274cb902d1",
+        "type": "ui_numeric",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Overdischarge Recovery Voltage",
+        "tooltip": "",
+        "group": "21f56792df3df30d",
+        "order": 6,
+        "width": 8,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "200",
+        "step": 1,
+        "className": "",
+        "x": 580,
+        "y": 1400,
+        "wires": [
+            [
+                "7294a204482c5cf9",
+                "9295e0e9915d21ee"
+            ]
+        ]
+    },
+    {
+        "id": "7294a204482c5cf9",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 15",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "9295e0e9915d21ee",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 8",
+        "func": "var flag = false;\nvar val = msg.payload;\nvar slaveId = flow.get(\"slave_id\");\nif (msg.isSet) {\n    flag = true;\n    msg.payload = {\n        slave_id : slaveId,\n        register_name: \"over_discharge_recovery_voltage\",\n        value : val\n    }\n}\nmsg.writeFlag = flag;\nmsg.url = \"http://192.168.2.132:8001/write\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1400,
+        "wires": [
+            [
+                "6db0c934ded6f616",
+                "f899e9cab2abf094"
+            ]
+        ]
+    },
+    {
+        "id": "d38e0ba42e7480cf",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6db0c934ded6f616",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 16",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "f899e9cab2abf094",
+        "type": "switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "property": "writeFlag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 1400,
+        "wires": [
+            [
+                "5c1b0f0b2f47c69f",
+                "d38e0ba42e7480cf"
+            ]
+        ]
+    },
+    {
+        "id": "5c1b0f0b2f47c69f",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "c8c37c3ce3b91839",
+        "type": "ui_button",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21f56792df3df30d",
+        "order": 7,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1400,
+        "wires": [
+            [
+                "d0178892c4cddd75"
+            ]
+        ]
+    },
+    {
+        "id": "d0178892c4cddd75",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "isSet",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isSet",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1400,
+        "wires": [
+            [
+                "c5e271274cb902d1"
+            ]
+        ]
+    },
+    {
+        "id": "69abc6ba22d9fda0",
+        "type": "ui_numeric",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Undervoltage Threshold",
+        "tooltip": "",
+        "group": "21f56792df3df30d",
+        "order": 8,
+        "width": 8,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "200",
+        "step": 1,
+        "className": "",
+        "x": 550,
+        "y": 1500,
+        "wires": [
+            [
+                "c07ad3af549adb3d",
+                "e40bb2e109f7dbe0"
+            ]
+        ]
+    },
+    {
+        "id": "c07ad3af549adb3d",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 18",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "e40bb2e109f7dbe0",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 9",
+        "func": "var flag = false;\nvar val = msg.payload;\nvar slaveId = flow.get(\"slave_id\");\nif (msg.isSet) {\n    flag = true;\n    msg.payload = {\n        slave_id : slaveId,\n        register_name: \"under_voltage_threshold\",\n        value : val\n    }\n}\nmsg.writeFlag = flag;\nmsg.url = \"http://192.168.2.132:8001/write\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1500,
+        "wires": [
+            [
+                "12ba596524194654",
+                "8935ea5ac821f0a8"
+            ]
+        ]
+    },
+    {
+        "id": "b1743384a4c029e3",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12ba596524194654",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 19",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "8935ea5ac821f0a8",
+        "type": "switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "property": "writeFlag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 1500,
+        "wires": [
+            [
+                "e5173b45958d72ed",
+                "b1743384a4c029e3"
+            ]
+        ]
+    },
+    {
+        "id": "e5173b45958d72ed",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "9650e9eafcb1180d",
+        "type": "ui_button",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21f56792df3df30d",
+        "order": 9,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1500,
+        "wires": [
+            [
+                "f15a5e410bdae026"
+            ]
+        ]
+    },
+    {
+        "id": "f15a5e410bdae026",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "isSet",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isSet",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1500,
+        "wires": [
+            [
+                "69abc6ba22d9fda0"
+            ]
+        ]
+    },
+    {
+        "id": "753ec2a2073e80d3",
+        "type": "ui_numeric",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Overdischarge Voltage",
+        "tooltip": "",
+        "group": "21f56792df3df30d",
+        "order": 10,
+        "width": 8,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "200",
+        "step": 1,
+        "className": "",
+        "x": 540,
+        "y": 1600,
+        "wires": [
+            [
+                "72678d6ffba98847",
+                "79145e9308a42c01"
+            ]
+        ]
+    },
+    {
+        "id": "72678d6ffba98847",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 21",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "79145e9308a42c01",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 10",
+        "func": "var flag = false;\nvar val = msg.payload;\nvar slaveId = flow.get(\"slave_id\");\nif (msg.isSet) {\n    flag = true;\n    msg.payload = {\n        slave_id : slaveId,\n        register_name: \"over_discharge_voltage\",\n        value : val\n    }\n}\nmsg.writeFlag = flag;\nmsg.url = \"http://192.168.2.132:8001/write\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1600,
+        "wires": [
+            [
+                "f43ad59d0e610798",
+                "7d30320fc916468f"
+            ]
+        ]
+    },
+    {
+        "id": "9cdf073fe07ca71a",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f43ad59d0e610798",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 22",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "7d30320fc916468f",
+        "type": "switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "property": "writeFlag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 1600,
+        "wires": [
+            [
+                "0cdbb26b22abd82d",
+                "9cdf073fe07ca71a"
+            ]
+        ]
+    },
+    {
+        "id": "0cdbb26b22abd82d",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 23",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "621369b78e5ed0cd",
+        "type": "ui_button",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21f56792df3df30d",
+        "order": 11,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1600,
+        "wires": [
+            [
+                "2f2dd0d1eb0dd9bb"
+            ]
+        ]
+    },
+    {
+        "id": "2f2dd0d1eb0dd9bb",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "isSet",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isSet",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1600,
+        "wires": [
+            [
+                "753ec2a2073e80d3"
+            ]
+        ]
+    },
+    {
+        "id": "51cd7fcbbcb3ada2",
+        "type": "ui_numeric",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Overdischarge Limit Voltage",
+        "tooltip": "",
+        "group": "21f56792df3df30d",
+        "order": 12,
+        "width": 8,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "200",
+        "step": 1,
+        "className": "",
+        "x": 560,
+        "y": 1700,
+        "wires": [
+            [
+                "dfb9eae96513ea8b",
+                "ef86fb01b8ee3bfa"
+            ]
+        ]
+    },
+    {
+        "id": "dfb9eae96513ea8b",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 24",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "ef86fb01b8ee3bfa",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 11",
+        "func": "var flag = false;\nvar val = msg.payload;\nvar slaveId = flow.get(\"slave_id\");\nif (msg.isSet) {\n    flag = true;\n    msg.payload = {\n        slave_id : slaveId,\n        register_name: \"over_discharge_limit_voltage\",\n        value : val\n    }\n}\nmsg.writeFlag = flag;\nmsg.url = \"http://192.168.2.132:8001/write\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1700,
+        "wires": [
+            [
+                "2f995da141e4ea6b",
+                "7a0a40197614f2c1"
+            ]
+        ]
+    },
+    {
+        "id": "d4d87174c6e15058",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f995da141e4ea6b",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 25",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "7a0a40197614f2c1",
+        "type": "switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "property": "writeFlag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 1700,
+        "wires": [
+            [
+                "a385327200bc5528",
+                "d4d87174c6e15058"
+            ]
+        ]
+    },
+    {
+        "id": "a385327200bc5528",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 26",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "d923e874cc1e670b",
+        "type": "ui_button",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21f56792df3df30d",
+        "order": 13,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1700,
+        "wires": [
+            [
+                "b10ab16038d709c5"
+            ]
+        ]
+    },
+    {
+        "id": "b10ab16038d709c5",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "isSet",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isSet",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1700,
+        "wires": [
+            [
+                "51cd7fcbbcb3ada2"
+            ]
+        ]
+    },
+    {
+        "id": "e8534a40628d72fa",
+        "type": "ui_numeric",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Overdischarge Time Delay",
+        "tooltip": "",
+        "group": "21f56792df3df30d",
+        "order": 14,
+        "width": 8,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "200",
+        "step": 1,
+        "className": "",
+        "x": 560,
+        "y": 1800,
+        "wires": [
+            [
+                "b99d68b39779d18a",
+                "12d7158c7ec7f30d"
+            ]
+        ]
+    },
+    {
+        "id": "b99d68b39779d18a",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 27",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "12d7158c7ec7f30d",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 12",
+        "func": "var flag = false;\nvar val = msg.payload;\nvar slaveId = flow.get(\"slave_id\");\nif (msg.isSet) {\n    flag = true;\n    msg.payload = {\n        slave_id : slaveId,\n        register_name: \"over_discharge_time_delay\",\n        value : val\n    }\n}\nmsg.writeFlag = flag;\nmsg.url = \"http://192.168.2.132:8001/write\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1800,
+        "wires": [
+            [
+                "f0d471f8c6ab8edd",
+                "f673b9f28c9109d3"
+            ]
+        ]
+    },
+    {
+        "id": "f41605e40ada9eb8",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 1800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0d471f8c6ab8edd",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 28",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "f673b9f28c9109d3",
+        "type": "switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "property": "writeFlag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 1800,
+        "wires": [
+            [
+                "4781eebc152952e0",
+                "f41605e40ada9eb8"
+            ]
+        ]
+    },
+    {
+        "id": "4781eebc152952e0",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 29",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "3d88c1ad5db35731",
+        "type": "ui_button",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21f56792df3df30d",
+        "order": 15,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1800,
+        "wires": [
+            [
+                "f91a3a57fbd89ee7"
+            ]
+        ]
+    },
+    {
+        "id": "f91a3a57fbd89ee7",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "isSet",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isSet",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1800,
+        "wires": [
+            [
+                "e8534a40628d72fa"
+            ]
+        ]
+    },
+    {
+        "id": "bc291341275af4df",
+        "type": "ui_numeric",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Temperature Compensation",
+        "tooltip": "",
+        "group": "21f56792df3df30d",
+        "order": 16,
+        "width": 8,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "200",
+        "step": 1,
+        "className": "",
+        "x": 560,
+        "y": 1900,
+        "wires": [
+            [
+                "a2de4dd38c69d770",
+                "db0cab84c471dd65"
+            ]
+        ]
+    },
+    {
+        "id": "a2de4dd38c69d770",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 30",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "db0cab84c471dd65",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 13",
+        "func": "var flag = false;\nvar val = msg.payload;\nvar slaveId = flow.get(\"slave_id\");\nif (msg.isSet) {\n    flag = true;\n    msg.payload = {\n        slave_id : slaveId,\n        register_name: \"temperature_compensation\",\n        value : val\n    }\n}\nmsg.writeFlag = flag;\nmsg.url = \"http://192.168.2.132:8001/write\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1900,
+        "wires": [
+            [
+                "e3c97b5c4b14bd40",
+                "283fc70908097164"
+            ]
+        ]
+    },
+    {
+        "id": "c0d3002202286dd7",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3c97b5c4b14bd40",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 31",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "283fc70908097164",
+        "type": "switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "property": "writeFlag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 1900,
+        "wires": [
+            [
+                "7d51fc713c24e21c",
+                "c0d3002202286dd7"
+            ]
+        ]
+    },
+    {
+        "id": "7d51fc713c24e21c",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 32",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "d15f2f3ea7f55aa7",
+        "type": "ui_button",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21f56792df3df30d",
+        "order": 17,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1900,
+        "wires": [
+            [
+                "9e4f536a311e78a3"
+            ]
+        ]
+    },
+    {
+        "id": "9e4f536a311e78a3",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "isSet",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isSet",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1900,
+        "wires": [
+            [
+                "bc291341275af4df"
+            ]
+        ]
+    },
+    {
+        "id": "46ed1043fca5fba3",
+        "type": "ui_numeric",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Load Mode",
+        "tooltip": "",
+        "group": "21f56792df3df30d",
+        "order": 18,
+        "width": 8,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "17",
+        "step": 1,
+        "className": "",
+        "x": 510,
+        "y": 2000,
+        "wires": [
+            [
+                "2219695c90b0ecfd",
+                "b2f5cf9226e62135"
+            ]
+        ]
+    },
+    {
+        "id": "2219695c90b0ecfd",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 33",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "b2f5cf9226e62135",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 14",
+        "func": "var flag = false;\nvar val = msg.payload;\nvar slaveId = flow.get(\"slave_id\");\nif (msg.isSet) {\n    flag = true;\n    msg.payload = {\n        slave_id : slaveId,\n        register_name: \"load_mode\",\n        value : val\n    }\n}\nmsg.writeFlag = flag;\nmsg.url = \"http://192.168.2.132:8001/write\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 2000,
+        "wires": [
+            [
+                "08e5e5b93297dc79",
+                "d3715afe66f01433"
+            ]
+        ]
+    },
+    {
+        "id": "880082815b8f7387",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 2000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "08e5e5b93297dc79",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 34",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "d3715afe66f01433",
+        "type": "switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "property": "writeFlag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 2000,
+        "wires": [
+            [
+                "5339126e3e4c5a0e",
+                "880082815b8f7387"
+            ]
+        ]
+    },
+    {
+        "id": "5339126e3e4c5a0e",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 35",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "93236128ef330b29",
+        "type": "ui_button",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "group": "21f56792df3df30d",
+        "order": 19,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 2000,
+        "wires": [
+            [
+                "b7f1a3f45a08386b"
+            ]
+        ]
+    },
+    {
+        "id": "b7f1a3f45a08386b",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "isSet",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isSet",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 2000,
+        "wires": [
+            [
+                "46ed1043fca5fba3"
+            ]
+        ]
+    },
+    {
+        "id": "e0570d1f69bf20f6",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "21f56792df3df30d",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Slave Address",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 940,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "f9695bf9a3a4af8f",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "155",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1260,
+        "wires": [
+            [
+                "9eb161938fbea3cd"
+            ]
+        ]
+    },
+    {
+        "id": "f2d942e98f946f73",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "127",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1360,
+        "wires": [
+            [
+                "c5e271274cb902d1"
+            ]
+        ]
+    },
+    {
+        "id": "b3640a3927b5c5f5",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "122",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1460,
+        "wires": [
+            [
+                "69abc6ba22d9fda0"
+            ]
+        ]
+    },
+    {
+        "id": "967a17c7815a92b9",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "122",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1560,
+        "wires": [
+            [
+                "753ec2a2073e80d3"
+            ]
+        ]
+    },
+    {
+        "id": "16be10f9b19adfed",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "117",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1660,
+        "wires": [
+            [
+                "51cd7fcbbcb3ada2"
+            ]
+        ]
+    },
+    {
+        "id": "801e0cf252a52fe9",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1760,
+        "wires": [
+            [
+                "e8534a40628d72fa"
+            ]
+        ]
+    },
+    {
+        "id": "6bb5d8cfec0f3430",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "3",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1860,
+        "wires": [
+            [
+                "bc291341275af4df"
+            ]
+        ]
+    },
+    {
+        "id": "e4a61bb65d6bad21",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "15",
+        "payloadType": "num",
+        "x": 310,
+        "y": 1960,
+        "wires": [
+            [
+                "46ed1043fca5fba3"
+            ]
+        ]
+    },
+    {
+        "id": "2e5cfe24cb8e1035",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "429fbb22beb84460",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Load Mode",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 930,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d1537684c78e0137",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 10,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Load Mode",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 750,
+        "y": 1140,
+        "wires": []
+    }
+]
