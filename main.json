@@ -416,6 +416,16 @@
                         "port": 9
                     }
                 ]
+            },
+            {
+                "x": 520,
+                "y": 640,
+                "wires": [
+                    {
+                        "id": "f5afcbfbd3f193a3",
+                        "port": 10
+                    }
+                ]
             }
         ],
         "env": [],
@@ -873,8 +883,8 @@
         "type": "function",
         "z": "53781e08e37b5ed4",
         "name": "function 5",
-        "func": "var output = [\n    {payload: msg.payload.setting[0].slave_id},\n    {payload : msg.payload.setting[0].over_voltage_threshold},\n    {payload : msg.payload.setting[0].charging_limit_voltage},\n    { payload: msg.payload.setting[0].overdischarge_recovery_voltage},\n    { payload: msg.payload.setting[0].undervoltage_threshold},\n    { payload: msg.payload.setting[0].overdischarge_voltage},\n    { payload: msg.payload.setting[0].overdischarge_limit_voltage},\n    { payload: msg.payload.setting[0].overdischarge_time_delay},\n    { payload: msg.payload.setting[0].temperature_compensation},\n    { payload: msg.payload.setting[0].load_mode}\n]\n\nreturn output;",
-        "outputs": 10,
+        "func": "var output = [\n    {payload: msg.payload.setting[0].slave_id},\n    { payload: msg.payload.setting[0].overvoltage_threshold},\n    {payload : msg.payload.setting[0].charging_limit_voltage},\n    { payload: msg.payload.setting[0].overdischarge_recovery_voltage},\n    { payload: msg.payload.setting[0].undervoltage_threshold},\n    { payload: msg.payload.setting[0].overdischarge_voltage},\n    { payload: msg.payload.setting[0].overdischarge_limit_voltage},\n    { payload: msg.payload.setting[0].overdischarge_time_delay},\n    { payload: msg.payload.setting[0].temperature_compensation},\n    { payload: msg.payload.setting[0].load_mode},\n    { payload: msg.payload.setting[0].battery_type },\n]\n\nreturn output;",
+        "outputs": 11,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -882,6 +892,7 @@
         "x": 300,
         "y": 80,
         "wires": [
+            [],
             [],
             [],
             [],
@@ -1509,7 +1520,7 @@
         "height": 0,
         "name": "",
         "label": "Battery Capacity",
-        "format": "{{msg.payload}} Ah",
+        "format": "{{msg.payload}} %",
         "layout": "row-spread",
         "className": "",
         "x": 940,
@@ -1521,15 +1532,15 @@
         "type": "ui_text",
         "z": "8ea4d9970cbb508a",
         "group": "295cde7d972e1b4c",
-        "order": 2,
+        "order": 3,
         "width": 12,
         "height": 1,
         "name": "",
-        "label": "Overvoltage Threshold Voltage",
+        "label": "Overvoltage Threshold",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 990,
+        "x": 960,
         "y": 820,
         "wires": []
     },
@@ -1538,7 +1549,7 @@
         "type": "ui_text",
         "z": "8ea4d9970cbb508a",
         "group": "295cde7d972e1b4c",
-        "order": 3,
+        "order": 4,
         "width": 12,
         "height": 1,
         "name": "",
@@ -1555,7 +1566,7 @@
         "type": "ui_text",
         "z": "8ea4d9970cbb508a",
         "group": "295cde7d972e1b4c",
-        "order": 4,
+        "order": 5,
         "width": 12,
         "height": 1,
         "name": "",
@@ -1572,7 +1583,7 @@
         "type": "ui_text",
         "z": "8ea4d9970cbb508a",
         "group": "295cde7d972e1b4c",
-        "order": 5,
+        "order": 6,
         "width": 12,
         "height": 1,
         "name": "",
@@ -1589,7 +1600,7 @@
         "type": "ui_text",
         "z": "8ea4d9970cbb508a",
         "group": "295cde7d972e1b4c",
-        "order": 6,
+        "order": 7,
         "width": 12,
         "height": 1,
         "name": "",
@@ -1606,7 +1617,7 @@
         "type": "ui_text",
         "z": "8ea4d9970cbb508a",
         "group": "295cde7d972e1b4c",
-        "order": 7,
+        "order": 8,
         "width": 12,
         "height": 1,
         "name": "",
@@ -1623,7 +1634,7 @@
         "type": "ui_text",
         "z": "8ea4d9970cbb508a",
         "group": "295cde7d972e1b4c",
-        "order": 8,
+        "order": 9,
         "width": 12,
         "height": 1,
         "name": "",
@@ -1640,7 +1651,7 @@
         "type": "ui_text",
         "z": "8ea4d9970cbb508a",
         "group": "295cde7d972e1b4c",
-        "order": 9,
+        "order": 10,
         "width": 12,
         "height": 1,
         "name": "",
@@ -1777,6 +1788,9 @@
             ],
             [
                 "d1537684c78e0137"
+            ],
+            [
+                "b3c0a1cbcf22a067"
             ]
         ]
     },
@@ -1788,7 +1802,7 @@
         "label": "Overvoltage Threshold",
         "tooltip": "",
         "group": "21f56792df3df30d",
-        "order": 2,
+        "order": 4,
         "width": 8,
         "height": 1,
         "wrap": false,
@@ -1800,8 +1814,8 @@
         "max": "200",
         "step": 1,
         "className": "",
-        "x": 540,
-        "y": 1200,
+        "x": 680,
+        "y": 1420,
         "wires": [
             [
                 "fe228b447dd9b64c",
@@ -1822,8 +1836,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 1260,
+        "x": 680,
+        "y": 1480,
         "wires": []
     },
     {
@@ -1843,8 +1857,8 @@
         "topic": "",
         "payload": "160",
         "payloadType": "num",
-        "x": 310,
-        "y": 1160,
+        "x": 450,
+        "y": 1380,
         "wires": [
             [
                 "96d5207c45eb73f7"
@@ -1862,8 +1876,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 1200,
+        "x": 920,
+        "y": 1420,
         "wires": [
             [
                 "ffd19633190aa935",
@@ -1887,8 +1901,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1190,
-        "y": 1200,
+        "x": 1330,
+        "y": 1420,
         "wires": [
             []
         ]
@@ -1906,8 +1920,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 990,
-        "y": 1260,
+        "x": 1130,
+        "y": 1480,
         "wires": []
     },
     {
@@ -1979,8 +1993,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 990,
-        "y": 1200,
+        "x": 1130,
+        "y": 1420,
         "wires": [
             [
                 "23c70ffbf9513722",
@@ -1993,7 +2007,7 @@
         "type": "debug",
         "z": "8ea4d9970cbb508a",
         "name": "debug 11",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2001,17 +2015,17 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1180,
-        "y": 1260,
+        "x": 1320,
+        "y": 1480,
         "wires": []
     },
     {
         "id": "17c510c86a57f021",
         "type": "ui_button",
         "z": "8ea4d9970cbb508a",
-        "name": "",
+        "name": "Apply Overvoltage Threshold",
         "group": "21f56792df3df30d",
-        "order": 3,
+        "order": 5,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -2025,8 +2039,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 1200,
+        "x": 220,
+        "y": 1420,
         "wires": [
             [
                 "20a41fd0bbb7d891"
@@ -2061,8 +2075,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 1200,
+        "x": 460,
+        "y": 1420,
         "wires": [
             [
                 "96d5207c45eb73f7"
@@ -2077,7 +2091,7 @@
         "label": "Charging Limit Voltage",
         "tooltip": "",
         "group": "21f56792df3df30d",
-        "order": 4,
+        "order": 6,
         "width": 8,
         "height": 1,
         "wrap": false,
@@ -2089,8 +2103,8 @@
         "max": "200",
         "step": 1,
         "className": "",
-        "x": 540,
-        "y": 1300,
+        "x": 680,
+        "y": 1520,
         "wires": [
             [
                 "81d19a16547ecf8b",
@@ -2111,8 +2125,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 1360,
+        "x": 680,
+        "y": 1580,
         "wires": []
     },
     {
@@ -2126,8 +2140,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 1300,
+        "x": 920,
+        "y": 1520,
         "wires": [
             [
                 "aa8711ced27591c9",
@@ -2151,8 +2165,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1190,
-        "y": 1300,
+        "x": 1330,
+        "y": 1520,
         "wires": [
             []
         ]
@@ -2170,8 +2184,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 990,
-        "y": 1360,
+        "x": 1130,
+        "y": 1580,
         "wires": []
     },
     {
@@ -2189,8 +2203,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 990,
-        "y": 1300,
+        "x": 1130,
+        "y": 1520,
         "wires": [
             [
                 "e8216a377012b451",
@@ -2203,7 +2217,7 @@
         "type": "debug",
         "z": "8ea4d9970cbb508a",
         "name": "debug 14",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2211,17 +2225,17 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1180,
-        "y": 1360,
+        "x": 1320,
+        "y": 1580,
         "wires": []
     },
     {
         "id": "6d424523c3df3239",
         "type": "ui_button",
         "z": "8ea4d9970cbb508a",
-        "name": "",
+        "name": "Apply Charging Limit",
         "group": "21f56792df3df30d",
-        "order": 5,
+        "order": 7,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -2235,8 +2249,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 1300,
+        "x": 240,
+        "y": 1520,
         "wires": [
             [
                 "c78a1f4afed1351c"
@@ -2271,8 +2285,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 1300,
+        "x": 460,
+        "y": 1520,
         "wires": [
             [
                 "9eb161938fbea3cd"
@@ -2417,7 +2431,7 @@
         "label": "Overdischarge Recovery Voltage",
         "tooltip": "",
         "group": "21f56792df3df30d",
-        "order": 6,
+        "order": 8,
         "width": 8,
         "height": 1,
         "wrap": false,
@@ -2429,8 +2443,8 @@
         "max": "200",
         "step": 1,
         "className": "",
-        "x": 580,
-        "y": 1400,
+        "x": 720,
+        "y": 1620,
         "wires": [
             [
                 "7294a204482c5cf9",
@@ -2451,8 +2465,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 1460,
+        "x": 680,
+        "y": 1680,
         "wires": []
     },
     {
@@ -2466,8 +2480,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 1400,
+        "x": 980,
+        "y": 1620,
         "wires": [
             [
                 "6db0c934ded6f616",
@@ -2491,8 +2505,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1250,
-        "y": 1400,
+        "x": 1390,
+        "y": 1620,
         "wires": [
             []
         ]
@@ -2510,8 +2524,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 1460,
+        "x": 1190,
+        "y": 1680,
         "wires": []
     },
     {
@@ -2529,8 +2543,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1050,
-        "y": 1400,
+        "x": 1190,
+        "y": 1620,
         "wires": [
             [
                 "5c1b0f0b2f47c69f",
@@ -2543,7 +2557,7 @@
         "type": "debug",
         "z": "8ea4d9970cbb508a",
         "name": "debug 17",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2551,17 +2565,17 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1240,
-        "y": 1460,
+        "x": 1380,
+        "y": 1680,
         "wires": []
     },
     {
         "id": "c8c37c3ce3b91839",
         "type": "ui_button",
         "z": "8ea4d9970cbb508a",
-        "name": "",
+        "name": "Apply Overdischarge Recovery",
         "group": "21f56792df3df30d",
-        "order": 7,
+        "order": 9,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -2575,8 +2589,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 1400,
+        "x": 210,
+        "y": 1620,
         "wires": [
             [
                 "d0178892c4cddd75"
@@ -2611,8 +2625,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 1400,
+        "x": 460,
+        "y": 1620,
         "wires": [
             [
                 "c5e271274cb902d1"
@@ -2627,7 +2641,7 @@
         "label": "Undervoltage Threshold",
         "tooltip": "",
         "group": "21f56792df3df30d",
-        "order": 8,
+        "order": 10,
         "width": 8,
         "height": 1,
         "wrap": false,
@@ -2639,8 +2653,8 @@
         "max": "200",
         "step": 1,
         "className": "",
-        "x": 550,
-        "y": 1500,
+        "x": 690,
+        "y": 1720,
         "wires": [
             [
                 "c07ad3af549adb3d",
@@ -2661,8 +2675,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 1560,
+        "x": 680,
+        "y": 1780,
         "wires": []
     },
     {
@@ -2676,8 +2690,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 1500,
+        "x": 980,
+        "y": 1720,
         "wires": [
             [
                 "12ba596524194654",
@@ -2701,8 +2715,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1250,
-        "y": 1500,
+        "x": 1390,
+        "y": 1720,
         "wires": [
             []
         ]
@@ -2720,8 +2734,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 1560,
+        "x": 1190,
+        "y": 1780,
         "wires": []
     },
     {
@@ -2739,8 +2753,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1050,
-        "y": 1500,
+        "x": 1190,
+        "y": 1720,
         "wires": [
             [
                 "e5173b45958d72ed",
@@ -2753,7 +2767,7 @@
         "type": "debug",
         "z": "8ea4d9970cbb508a",
         "name": "debug 20",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2761,17 +2775,17 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1240,
-        "y": 1560,
+        "x": 1380,
+        "y": 1780,
         "wires": []
     },
     {
         "id": "9650e9eafcb1180d",
         "type": "ui_button",
         "z": "8ea4d9970cbb508a",
-        "name": "",
+        "name": "Apply Undervoltage Threshold",
         "group": "21f56792df3df30d",
-        "order": 9,
+        "order": 11,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -2785,8 +2799,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 1500,
+        "x": 210,
+        "y": 1720,
         "wires": [
             [
                 "f15a5e410bdae026"
@@ -2821,8 +2835,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 1500,
+        "x": 460,
+        "y": 1720,
         "wires": [
             [
                 "69abc6ba22d9fda0"
@@ -2837,7 +2851,7 @@
         "label": "Overdischarge Voltage",
         "tooltip": "",
         "group": "21f56792df3df30d",
-        "order": 10,
+        "order": 12,
         "width": 8,
         "height": 1,
         "wrap": false,
@@ -2849,8 +2863,8 @@
         "max": "200",
         "step": 1,
         "className": "",
-        "x": 540,
-        "y": 1600,
+        "x": 680,
+        "y": 1820,
         "wires": [
             [
                 "72678d6ffba98847",
@@ -2871,8 +2885,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 1660,
+        "x": 680,
+        "y": 1880,
         "wires": []
     },
     {
@@ -2886,8 +2900,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 1600,
+        "x": 980,
+        "y": 1820,
         "wires": [
             [
                 "f43ad59d0e610798",
@@ -2911,8 +2925,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1250,
-        "y": 1600,
+        "x": 1390,
+        "y": 1820,
         "wires": [
             []
         ]
@@ -2930,8 +2944,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 1660,
+        "x": 1190,
+        "y": 1880,
         "wires": []
     },
     {
@@ -2949,8 +2963,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1050,
-        "y": 1600,
+        "x": 1190,
+        "y": 1820,
         "wires": [
             [
                 "0cdbb26b22abd82d",
@@ -2963,7 +2977,7 @@
         "type": "debug",
         "z": "8ea4d9970cbb508a",
         "name": "debug 23",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2971,17 +2985,17 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1240,
-        "y": 1660,
+        "x": 1380,
+        "y": 1880,
         "wires": []
     },
     {
         "id": "621369b78e5ed0cd",
         "type": "ui_button",
         "z": "8ea4d9970cbb508a",
-        "name": "",
+        "name": "Apply Overdischarge Voltage",
         "group": "21f56792df3df30d",
-        "order": 11,
+        "order": 13,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -2995,8 +3009,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 1600,
+        "x": 220,
+        "y": 1820,
         "wires": [
             [
                 "2f2dd0d1eb0dd9bb"
@@ -3031,8 +3045,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 1600,
+        "x": 460,
+        "y": 1820,
         "wires": [
             [
                 "753ec2a2073e80d3"
@@ -3047,7 +3061,7 @@
         "label": "Overdischarge Limit Voltage",
         "tooltip": "",
         "group": "21f56792df3df30d",
-        "order": 12,
+        "order": 14,
         "width": 8,
         "height": 1,
         "wrap": false,
@@ -3059,8 +3073,8 @@
         "max": "200",
         "step": 1,
         "className": "",
-        "x": 560,
-        "y": 1700,
+        "x": 700,
+        "y": 1920,
         "wires": [
             [
                 "dfb9eae96513ea8b",
@@ -3081,8 +3095,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 1760,
+        "x": 680,
+        "y": 1980,
         "wires": []
     },
     {
@@ -3096,8 +3110,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 1700,
+        "x": 980,
+        "y": 1920,
         "wires": [
             [
                 "2f995da141e4ea6b",
@@ -3121,8 +3135,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1250,
-        "y": 1700,
+        "x": 1390,
+        "y": 1920,
         "wires": [
             []
         ]
@@ -3140,8 +3154,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 1760,
+        "x": 1190,
+        "y": 1980,
         "wires": []
     },
     {
@@ -3159,8 +3173,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1050,
-        "y": 1700,
+        "x": 1190,
+        "y": 1920,
         "wires": [
             [
                 "a385327200bc5528",
@@ -3173,7 +3187,7 @@
         "type": "debug",
         "z": "8ea4d9970cbb508a",
         "name": "debug 26",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3181,17 +3195,17 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1240,
-        "y": 1760,
+        "x": 1380,
+        "y": 1980,
         "wires": []
     },
     {
         "id": "d923e874cc1e670b",
         "type": "ui_button",
         "z": "8ea4d9970cbb508a",
-        "name": "",
+        "name": "Apply Overdischarge Limit",
         "group": "21f56792df3df30d",
-        "order": 13,
+        "order": 15,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -3205,8 +3219,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 1700,
+        "x": 230,
+        "y": 1920,
         "wires": [
             [
                 "b10ab16038d709c5"
@@ -3241,8 +3255,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 1700,
+        "x": 460,
+        "y": 1920,
         "wires": [
             [
                 "51cd7fcbbcb3ada2"
@@ -3257,7 +3271,7 @@
         "label": "Overdischarge Time Delay",
         "tooltip": "",
         "group": "21f56792df3df30d",
-        "order": 14,
+        "order": 16,
         "width": 8,
         "height": 1,
         "wrap": false,
@@ -3269,8 +3283,8 @@
         "max": "200",
         "step": 1,
         "className": "",
-        "x": 560,
-        "y": 1800,
+        "x": 700,
+        "y": 2020,
         "wires": [
             [
                 "b99d68b39779d18a",
@@ -3291,8 +3305,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 1860,
+        "x": 680,
+        "y": 2080,
         "wires": []
     },
     {
@@ -3306,8 +3320,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 1800,
+        "x": 980,
+        "y": 2020,
         "wires": [
             [
                 "f0d471f8c6ab8edd",
@@ -3331,8 +3345,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1250,
-        "y": 1800,
+        "x": 1390,
+        "y": 2020,
         "wires": [
             []
         ]
@@ -3350,8 +3364,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 1860,
+        "x": 1190,
+        "y": 2080,
         "wires": []
     },
     {
@@ -3369,8 +3383,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1050,
-        "y": 1800,
+        "x": 1190,
+        "y": 2020,
         "wires": [
             [
                 "4781eebc152952e0",
@@ -3383,7 +3397,7 @@
         "type": "debug",
         "z": "8ea4d9970cbb508a",
         "name": "debug 29",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3391,17 +3405,17 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1240,
-        "y": 1860,
+        "x": 1380,
+        "y": 2080,
         "wires": []
     },
     {
         "id": "3d88c1ad5db35731",
         "type": "ui_button",
         "z": "8ea4d9970cbb508a",
-        "name": "",
+        "name": "Apply Overdischarge Time",
         "group": "21f56792df3df30d",
-        "order": 15,
+        "order": 17,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -3415,8 +3429,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 1800,
+        "x": 220,
+        "y": 2020,
         "wires": [
             [
                 "f91a3a57fbd89ee7"
@@ -3451,8 +3465,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 1800,
+        "x": 460,
+        "y": 2020,
         "wires": [
             [
                 "e8534a40628d72fa"
@@ -3467,7 +3481,7 @@
         "label": "Temperature Compensation",
         "tooltip": "",
         "group": "21f56792df3df30d",
-        "order": 16,
+        "order": 18,
         "width": 8,
         "height": 1,
         "wrap": false,
@@ -3479,8 +3493,8 @@
         "max": "200",
         "step": 1,
         "className": "",
-        "x": 560,
-        "y": 1900,
+        "x": 700,
+        "y": 2120,
         "wires": [
             [
                 "a2de4dd38c69d770",
@@ -3501,8 +3515,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 1960,
+        "x": 680,
+        "y": 2180,
         "wires": []
     },
     {
@@ -3516,8 +3530,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 1900,
+        "x": 980,
+        "y": 2120,
         "wires": [
             [
                 "e3c97b5c4b14bd40",
@@ -3541,8 +3555,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1250,
-        "y": 1900,
+        "x": 1390,
+        "y": 2120,
         "wires": [
             []
         ]
@@ -3560,8 +3574,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 1960,
+        "x": 1190,
+        "y": 2180,
         "wires": []
     },
     {
@@ -3579,8 +3593,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1050,
-        "y": 1900,
+        "x": 1190,
+        "y": 2120,
         "wires": [
             [
                 "7d51fc713c24e21c",
@@ -3593,7 +3607,7 @@
         "type": "debug",
         "z": "8ea4d9970cbb508a",
         "name": "debug 32",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3601,17 +3615,17 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1240,
-        "y": 1960,
+        "x": 1380,
+        "y": 2180,
         "wires": []
     },
     {
         "id": "d15f2f3ea7f55aa7",
         "type": "ui_button",
         "z": "8ea4d9970cbb508a",
-        "name": "",
+        "name": "Apply Temp",
         "group": "21f56792df3df30d",
-        "order": 17,
+        "order": 19,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -3625,8 +3639,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 1900,
+        "x": 270,
+        "y": 2120,
         "wires": [
             [
                 "9e4f536a311e78a3"
@@ -3661,8 +3675,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 1900,
+        "x": 460,
+        "y": 2120,
         "wires": [
             [
                 "bc291341275af4df"
@@ -3677,7 +3691,7 @@
         "label": "Load Mode",
         "tooltip": "",
         "group": "21f56792df3df30d",
-        "order": 18,
+        "order": 20,
         "width": 8,
         "height": 1,
         "wrap": false,
@@ -3689,8 +3703,8 @@
         "max": "17",
         "step": 1,
         "className": "",
-        "x": 510,
-        "y": 2000,
+        "x": 650,
+        "y": 2220,
         "wires": [
             [
                 "2219695c90b0ecfd",
@@ -3711,8 +3725,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 2060,
+        "x": 680,
+        "y": 2280,
         "wires": []
     },
     {
@@ -3726,8 +3740,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 2000,
+        "x": 980,
+        "y": 2220,
         "wires": [
             [
                 "08e5e5b93297dc79",
@@ -3751,8 +3765,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1250,
-        "y": 2000,
+        "x": 1390,
+        "y": 2220,
         "wires": [
             []
         ]
@@ -3770,8 +3784,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 2060,
+        "x": 1190,
+        "y": 2280,
         "wires": []
     },
     {
@@ -3789,8 +3803,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1050,
-        "y": 2000,
+        "x": 1190,
+        "y": 2220,
         "wires": [
             [
                 "5339126e3e4c5a0e",
@@ -3803,7 +3817,7 @@
         "type": "debug",
         "z": "8ea4d9970cbb508a",
         "name": "debug 35",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3811,17 +3825,17 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1240,
-        "y": 2060,
+        "x": 1380,
+        "y": 2280,
         "wires": []
     },
     {
         "id": "93236128ef330b29",
         "type": "ui_button",
         "z": "8ea4d9970cbb508a",
-        "name": "",
+        "name": "Apply Load Mode",
         "group": "21f56792df3df30d",
-        "order": 19,
+        "order": 21,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -3835,8 +3849,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 2000,
+        "x": 250,
+        "y": 2220,
         "wires": [
             [
                 "b7f1a3f45a08386b"
@@ -3871,8 +3885,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 2000,
+        "x": 460,
+        "y": 2220,
         "wires": [
             [
                 "46ed1043fca5fba3"
@@ -3913,8 +3927,8 @@
         "topic": "",
         "payload": "155",
         "payloadType": "num",
-        "x": 310,
-        "y": 1260,
+        "x": 450,
+        "y": 1480,
         "wires": [
             [
                 "9eb161938fbea3cd"
@@ -3938,8 +3952,8 @@
         "topic": "",
         "payload": "127",
         "payloadType": "num",
-        "x": 310,
-        "y": 1360,
+        "x": 450,
+        "y": 1580,
         "wires": [
             [
                 "c5e271274cb902d1"
@@ -3963,8 +3977,8 @@
         "topic": "",
         "payload": "122",
         "payloadType": "num",
-        "x": 310,
-        "y": 1460,
+        "x": 450,
+        "y": 1680,
         "wires": [
             [
                 "69abc6ba22d9fda0"
@@ -3988,8 +4002,8 @@
         "topic": "",
         "payload": "122",
         "payloadType": "num",
-        "x": 310,
-        "y": 1560,
+        "x": 450,
+        "y": 1780,
         "wires": [
             [
                 "753ec2a2073e80d3"
@@ -4013,8 +4027,8 @@
         "topic": "",
         "payload": "117",
         "payloadType": "num",
-        "x": 310,
-        "y": 1660,
+        "x": 450,
+        "y": 1880,
         "wires": [
             [
                 "51cd7fcbbcb3ada2"
@@ -4038,8 +4052,8 @@
         "topic": "",
         "payload": "5",
         "payloadType": "num",
-        "x": 310,
-        "y": 1760,
+        "x": 450,
+        "y": 1980,
         "wires": [
             [
                 "e8534a40628d72fa"
@@ -4063,8 +4077,8 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 310,
-        "y": 1860,
+        "x": 450,
+        "y": 2080,
         "wires": [
             [
                 "bc291341275af4df"
@@ -4088,8 +4102,8 @@
         "topic": "",
         "payload": "15",
         "payloadType": "num",
-        "x": 310,
-        "y": 1960,
+        "x": 450,
+        "y": 2180,
         "wires": [
             [
                 "46ed1043fca5fba3"
@@ -4118,7 +4132,7 @@
         "type": "ui_text",
         "z": "8ea4d9970cbb508a",
         "group": "295cde7d972e1b4c",
-        "order": 10,
+        "order": 11,
         "width": 12,
         "height": 1,
         "name": "",
@@ -4126,8 +4140,325 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 750,
-        "y": 1140,
+        "x": 930,
+        "y": 1180,
         "wires": []
+    },
+    {
+        "id": "9fb16476782a4c6c",
+        "type": "ui_text",
+        "z": "8ea4d9970cbb508a",
+        "group": "295cde7d972e1b4c",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Battery Type",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1150,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "b3c0a1cbcf22a067",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "User",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "Open",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "2",
+                "fromt": "num",
+                "to": "Sealed",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "3",
+                "fromt": "num",
+                "to": "Gel",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "4",
+                "fromt": "num",
+                "to": "Lithium",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 1220,
+        "wires": [
+            [
+                "9fb16476782a4c6c"
+            ]
+        ]
+    },
+    {
+        "id": "4cb319d51fd1611c",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 36",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "235648ada142e040",
+        "type": "function",
+        "z": "8ea4d9970cbb508a",
+        "name": "function 15",
+        "func": "var flag = false;\nvar val = msg.payload;\nvar slaveId = flow.get(\"slave_id\");\nif (msg.isSet) {\n    flag = true;\n    msg.payload = {\n        slave_id : slaveId,\n        register_name: \"batt_type\",\n        value : val\n    }\n}\nmsg.writeFlag = flag;\nmsg.url = \"http://192.168.2.132:8001/write\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 2340,
+        "wires": [
+            [
+                "b7e4197c34f076c7",
+                "9b544e01f8814ad4"
+            ]
+        ]
+    },
+    {
+        "id": "15408ef817564d28",
+        "type": "http request",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1390,
+        "y": 2340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7e4197c34f076c7",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 37",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "9b544e01f8814ad4",
+        "type": "switch",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "property": "writeFlag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1190,
+        "y": 2340,
+        "wires": [
+            [
+                "bab00bee56cba05d",
+                "15408ef817564d28"
+            ]
+        ]
+    },
+    {
+        "id": "bab00bee56cba05d",
+        "type": "debug",
+        "z": "8ea4d9970cbb508a",
+        "name": "debug 38",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "497915e0ba080d5e",
+        "type": "ui_button",
+        "z": "8ea4d9970cbb508a",
+        "name": "Apply Bat Type",
+        "group": "21f56792df3df30d",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "label": "Apply",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 260,
+        "y": 2340,
+        "wires": [
+            [
+                "d505272386545c01"
+            ]
+        ]
+    },
+    {
+        "id": "d505272386545c01",
+        "type": "change",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "isSet",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "isSet",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 2340,
+        "wires": [
+            [
+                "17f19f1b20eaa78f"
+            ]
+        ]
+    },
+    {
+        "id": "d5dcadaefabe9031",
+        "type": "inject",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 450,
+        "y": 2300,
+        "wires": [
+            [
+                "17f19f1b20eaa78f"
+            ]
+        ]
+    },
+    {
+        "id": "17f19f1b20eaa78f",
+        "type": "ui_numeric",
+        "z": "8ea4d9970cbb508a",
+        "name": "",
+        "label": "Battery Type",
+        "tooltip": "",
+        "group": "21f56792df3df30d",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "4",
+        "step": 1,
+        "className": "",
+        "x": 650,
+        "y": 2340,
+        "wires": [
+            [
+                "4cb319d51fd1611c",
+                "235648ada142e040"
+            ]
+        ]
     }
 ]
